@@ -1,0 +1,690 @@
+{
+    "Dataset Summary": {
+        "Number of Rows": 150,
+        "Number of Columns": 5,
+        "Column Names": [
+            "SepalLengthCm",
+            "SepalWidthCm",
+            "PetalLengthCm",
+            "PetalWidthCm",
+            "Species"
+        ],
+        "Missing Values": {
+            "SepalLengthCm": 0,
+            "SepalWidthCm": 0,
+            "PetalLengthCm": 0,
+            "PetalWidthCm": 0,
+            "Species": 0
+        },
+        "Data Types": {
+            "SepalLengthCm": "float64",
+            "SepalWidthCm": "float64",
+            "PetalLengthCm": "float64",
+            "PetalWidthCm": "float64",
+            "Species": "int64"
+        }
+    },
+    "EDA Statistics": {
+        "Describe Statistics": {
+            "SepalLengthCm": {
+                "count": 150.0,
+                "mean": 5.843333333333334,
+                "std": 0.8280661279778629,
+                "min": 4.3,
+                "25%": 5.1,
+                "50%": 5.8,
+                "75%": 6.4,
+                "max": 7.9
+            },
+            "SepalWidthCm": {
+                "count": 150.0,
+                "mean": 3.0540000000000003,
+                "std": 0.4335943113621737,
+                "min": 2.0,
+                "25%": 2.8,
+                "50%": 3.0,
+                "75%": 3.3,
+                "max": 4.4
+            },
+            "PetalLengthCm": {
+                "count": 150.0,
+                "mean": 3.758666666666666,
+                "std": 1.7644204199522617,
+                "min": 1.0,
+                "25%": 1.6,
+                "50%": 4.35,
+                "75%": 5.1,
+                "max": 6.9
+            },
+            "PetalWidthCm": {
+                "count": 150.0,
+                "mean": 1.1986666666666668,
+                "std": 0.7631607417008414,
+                "min": 0.1,
+                "25%": 0.3,
+                "50%": 1.3,
+                "75%": 1.8,
+                "max": 2.5
+            },
+            "Species": {
+                "count": 150.0,
+                "mean": 1.0,
+                "std": 0.8192319205190405,
+                "min": 0.0,
+                "25%": 0.0,
+                "50%": 1.0,
+                "75%": 2.0,
+                "max": 2.0
+            }
+        },
+        "Correlation Matrix": {
+            "SepalLengthCm": {
+                "SepalLengthCm": 1.0,
+                "SepalWidthCm": -0.10936924995064931,
+                "PetalLengthCm": 0.8717541573048716,
+                "PetalWidthCm": 0.8179536333691642,
+                "Species": 0.7825612318100821
+            },
+            "SepalWidthCm": {
+                "SepalLengthCm": -0.10936924995064931,
+                "SepalWidthCm": 1.0,
+                "PetalLengthCm": -0.4205160964011539,
+                "PetalWidthCm": -0.35654408961380507,
+                "Species": -0.41944620026002677
+            },
+            "PetalLengthCm": {
+                "SepalLengthCm": 0.8717541573048716,
+                "SepalWidthCm": -0.4205160964011539,
+                "PetalLengthCm": 1.0,
+                "PetalWidthCm": 0.9627570970509662,
+                "Species": 0.9490425448523334
+            },
+            "PetalWidthCm": {
+                "SepalLengthCm": 0.8179536333691642,
+                "SepalWidthCm": -0.35654408961380507,
+                "PetalLengthCm": 0.9627570970509662,
+                "PetalWidthCm": 1.0,
+                "Species": 0.9564638238016178
+            },
+            "Species": {
+                "SepalLengthCm": 0.7825612318100821,
+                "SepalWidthCm": -0.41944620026002677,
+                "PetalLengthCm": 0.9490425448523334,
+                "PetalWidthCm": 0.9564638238016178,
+                "Species": 1.0
+            }
+        }
+    },
+    "Feature Transformations": {
+        "Removed Columns": [
+            "Id"
+        ],
+        "Scaling Method": "StandardScaler",
+        "Label Encoding": {
+            "0": "Iris-setosa",
+            "1": "Iris-versicolor",
+            "2": "Iris-virginica"
+        }
+    },
+    "Model Results": {
+        "Logistic Regression": {
+            "Performance Metrics": {
+                "Accuracy": 0.8,
+                "Precision": 0.819,
+                "Recall": 0.8,
+                "F1 Score": 0.7953,
+                "AUC Score": 0.9418
+            },
+            "Confusion Matrix": [
+                [
+                    10,
+                    0,
+                    0
+                ],
+                [
+                    4,
+                    5,
+                    0
+                ],
+                [
+                    0,
+                    2,
+                    9
+                ]
+            ],
+            "Predictions": {
+                "Actual Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ],
+                "Predicted Values": [
+                    1,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    1,
+                    0,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    1,
+                    2,
+                    0,
+                    0
+                ]
+            },
+            "Classification Report": {
+                "0": {
+                    "precision": 0.7142857142857143,
+                    "recall": 1.0,
+                    "f1-score": 0.8333333333333334,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 0.7142857142857143,
+                    "recall": 0.5555555555555556,
+                    "f1-score": 0.625,
+                    "support": 9.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 0.8181818181818182,
+                    "f1-score": 0.9,
+                    "support": 11.0
+                },
+                "accuracy": 0.8,
+                "macro avg": {
+                    "precision": 0.8095238095238096,
+                    "recall": 0.7912457912457912,
+                    "f1-score": 0.7861111111111111,
+                    "support": 30.0
+                },
+                "weighted avg": {
+                    "precision": 0.8190476190476191,
+                    "recall": 0.8,
+                    "f1-score": 0.7952777777777779,
+                    "support": 30.0
+                }
+            },
+            "Hyperparameters": {
+                "C": 1.0,
+                "class_weight": null,
+                "dual": false,
+                "fit_intercept": true,
+                "intercept_scaling": 1,
+                "l1_ratio": null,
+                "max_iter": 100,
+                "multi_class": "deprecated",
+                "n_jobs": null,
+                "penalty": "l2",
+                "random_state": null,
+                "solver": "lbfgs",
+                "tol": 0.0001,
+                "verbose": 0,
+                "warm_start": false
+            }
+        },
+        "KNN": {
+            "Performance Metrics": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1 Score": 1.0,
+                "AUC Score": 1.0
+            },
+            "Confusion Matrix": [
+                [
+                    10,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    9,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    11
+                ]
+            ],
+            "Predictions": {
+                "Actual Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ],
+                "Predicted Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ]
+            },
+            "Classification Report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 11.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                }
+            },
+            "Hyperparameters": {
+                "algorithm": "auto",
+                "leaf_size": 30,
+                "metric": "minkowski",
+                "metric_params": null,
+                "n_jobs": null,
+                "n_neighbors": 3,
+                "p": 2,
+                "weights": "uniform"
+            }
+        },
+        "Decision Tree": {
+            "Performance Metrics": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1 Score": 1.0,
+                "AUC Score": 1.0
+            },
+            "Confusion Matrix": [
+                [
+                    10,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    9,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    11
+                ]
+            ],
+            "Predictions": {
+                "Actual Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ],
+                "Predicted Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ]
+            },
+            "Classification Report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 11.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                }
+            },
+            "Hyperparameters": {
+                "ccp_alpha": 0.0,
+                "class_weight": null,
+                "criterion": "gini",
+                "max_depth": null,
+                "max_features": null,
+                "max_leaf_nodes": null,
+                "min_impurity_decrease": 0.0,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2,
+                "min_weight_fraction_leaf": 0.0,
+                "monotonic_cst": null,
+                "random_state": null,
+                "splitter": "best"
+            }
+        },
+        "SVM": {
+            "Performance Metrics": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1 Score": 1.0,
+                "AUC Score": 1.0
+            },
+            "Confusion Matrix": [
+                [
+                    10,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    9,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    11
+                ]
+            ],
+            "Predictions": {
+                "Actual Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ],
+                "Predicted Values": [
+                    1,
+                    0,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    2,
+                    1,
+                    1,
+                    2,
+                    0,
+                    2,
+                    0,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    0,
+                    0
+                ]
+            },
+            "Classification Report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 10.0
+                },
+                "1": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 11.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 30.0
+                }
+            },
+            "Hyperparameters": {
+                "C": 1.0,
+                "break_ties": false,
+                "cache_size": 200,
+                "class_weight": null,
+                "coef0": 0.0,
+                "decision_function_shape": "ovr",
+                "degree": 3,
+                "gamma": "scale",
+                "kernel": "rbf",
+                "max_iter": -1,
+                "probability": true,
+                "random_state": null,
+                "shrinking": true,
+                "tol": 0.001,
+                "verbose": false
+            }
+        }
+    }
+}
